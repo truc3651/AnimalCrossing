@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/manhinh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <SeekBar
+        android:id="@+id/giraffe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="100dp"
+        android:max="100"
+        android:progressTint="#00FFFFFF"
+        android:thumb="@drawable/giraffe"
+        android:progressDrawable="@android:color/transparent"/>
+
+    <SeekBar
+        android:id="@+id/tiger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="50dp"
+        android:max="100"
+        android:thumb="@drawable/tiger"
+        android:progressDrawable="@android:color/transparent"/>
+
+    <SeekBar
+        android:id="@+id/pig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="32dp"
+        android:max="100"
+        android:thumb="@drawable/pig"
+        android:progressDrawable="@android:color/transparent"/>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RadioButton
+            android:id="@+id/rdGiraffe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rdTiger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+        <RadioButton
+            android:id="@+id/rdPig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="100"
+        android:textColor="#B7C52D"
+        android:textStyle="bold"
+        android:textSize="50sp"/>
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/brand"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
+
+
+
+
+
+
